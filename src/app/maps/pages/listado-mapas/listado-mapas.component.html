@@ -1,0 +1,42 @@
+<section class="contenedor">
+    <h2 class="titulo">UBICACIONES</h2>
+
+    <form [formGroup] = "myForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Departamentos</mat-label>
+            <mat-select formControlName="departamento">
+                <mat-option
+                    *ngFor="let departamento of departamentos"
+                    [value]="departamento._id">
+                    {{departamento.nombre}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+
+    <div
+        *ngIf="!cargado" 
+        class="sin-departamento">
+        <p class="sin-departamento--text">Debe de Elegir Un Departamento Para Ver la Lista De Centros De Vacunacion Disponibles</p>
+    </div>
+
+    <div class="contenedor-lista">
+        
+        <a *ngFor="let centro of centros" [routerLink] = "['/centros/agendar-cita',centro.departamento._id,centro.lng,centro.lat]">
+        
+            <mat-card >
+                <app-mini-mapa 
+                    [lng] = "centro.lng" 
+                    [lat] = "centro.lat"
+                    [routerLink] = "['/agendar-cita',centro.departamento,centro.lng,centro.lat]">
+                </app-mini-mapa>
+    
+                <mat-card-content>
+                    <p class="card-name">{{centro.nombre}}</p>
+                </mat-card-content>
+    
+            </mat-card>
+        </a>
+
+    </div>
+</section>

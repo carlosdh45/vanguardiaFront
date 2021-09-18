@@ -1,0 +1,36 @@
+.vista-mapa{
+    height: 100%;
+    width: 100%;
+    .contenido{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        .frm-contacto{
+            padding: 2rem;
+            margin-right: 1rem;
+            flex: 0 0 40%;
+
+            .departamento{
+                display: none;
+            }
+
+            .contenido-form{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                .boton{
+                    grid-column: -3/-1;
+                }
+            }
+        }
+        #mapa{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.mat-raised-button{
+    background-color: #EE7443;
+}
