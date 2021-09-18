@@ -5,13 +5,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { RequisitosComponent } from './pages/requisitos/requisitos.component';
 import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
+import { ThanksComponent } from './pages/thanks/thanks.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     RequisitosComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    ThanksComponent
   ],
   imports: [
     CommonModule,

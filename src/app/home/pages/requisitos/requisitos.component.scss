@@ -18,8 +18,8 @@ body{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 2rem;
-    line-height: 2;
+    font-size: 30px;
+    line-height: 1;
     color: #FFFFFF;
 }
 
@@ -77,8 +77,8 @@ body{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 2rem;
-    line-height: 2;
+    font-size: 50px;
+    line-height: 68px;
     text-transform: uppercase;
     color: #230200;
     text-align: center;
@@ -88,8 +88,8 @@ body{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
-    font-size: 1rem;
-    line-height: 2;
+    font-size: 40px;
+    line-height: 54px;
     color: #230200;
     text-align: center;
 
@@ -123,7 +123,7 @@ ul.lista {
     list-style: none;
 }
 ul li {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     font-size: 40px;
 }
 ul.lista li:before {
@@ -142,4 +142,11 @@ ul.lista li:before {
 
 .content h1{
     font-size: 50px;
+}
+
+.steps{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
