@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    background: #EE7443;
+    height: 87px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.header h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2;
+    color: #FFFFFF;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-list p{
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.body-content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 80%;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img{
+    width: 50%;
+    height: 100%;
+}
+
+.content-text{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-text h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #230200;
+    text-align: center;
+}
+
+.content-text h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2;
+    color: #230200;
+    text-align: center;
+
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+
+}
+
+.btn-box button{
+    width: 225px;
+    height: 74px;
+    background: #EE7443;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+ul.lista {
+    margin: 0 0 1.5em;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+ul.lista li:before {
+    content: "\f0b2";
+}
+ul.lista li:before {
+    position: relative;
+    left: 0;
+    font-family: FontAwesome;
+    font-size: 1.2em;
+    vertical-align: baseline;
+    color: #ffb100;
+    padding-right: 6px;
+}
+
+
+.content h1{
+    font-size: 50px;
+}
